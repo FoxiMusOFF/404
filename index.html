@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Страница не найдена | Ошибка 404</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: #121212;
+            color: #f0f0f0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 600px;
+        }
+        
+        h1 {
+            font-size: 120px;
+            margin-bottom: 20px;
+            color: #ff5555;
+            text-shadow: 0 0 10px rgba(255, 85, 85, 0.5);
+        }
+        
+        h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+        
+        p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: #ff5555;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        
+        .btn:hover {
+            background-color: #ff3333;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255, 85, 85, 0.4);
+        }
+        
+        .animation {
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-15px); }
+        }
+        
+        .emoji {
+            font-size: 80px;
+            margin-bottom: 20px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <span class="emoji animation">😕</span>
+        <h1>404</h1>
+        <h2>Страница не найдена</h2>
+        <p>Похоже, мы не можем найти страницу, которую вы ищете. Возможно, она была перемещена или удалена.</p>
+        <a href="https://foximusoff.github.io/Assembly-Team/" class="btn">Вернуться на главную</a>
+    </div>
+</body>
+</html>
